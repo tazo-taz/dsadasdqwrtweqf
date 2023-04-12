@@ -43,7 +43,9 @@ authRouter.get("/user", async (req, res) => {
         if (err) return res.send(null)
         else {
             const user = await User.findOne({ username })
-            res.send(user)
+            
+            if(user) res.send(user)
+            else res.send(null)
         }
     })
 
