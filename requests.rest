@@ -1,0 +1,20 @@
+GET http://localhost:8000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFyaSIsImlhdCI6MTY4MTM0NDg3NywiZXhwIjoxNjgxMzQ0ODkyfQ.SNGv5eFY_DnWNnnR6-RByGVnM08tpjmtN8Apd-IssVw
+###
+
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "username": "tazo1w2das6",
+    "password": "1234564"
+}
+###
+
+POST http://localhost:8000/register
+Content-Type: application/json
+
+{
+    "username": "tazo1w2das6",
+    "password": "123456"
+}
